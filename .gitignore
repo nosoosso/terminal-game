@@ -1,0 +1,7 @@
+/target
+**/*.rs.bk
+Cargo.lock
+
+/js/rust/
+/public/dist/
+node_modules/
