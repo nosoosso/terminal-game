@@ -1,0 +1,3 @@
+enum RustMsg {
+    NewText(String),
+}
