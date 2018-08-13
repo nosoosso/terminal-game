@@ -3,5 +3,6 @@
 Cargo.lock
 
 /js/rust/
+!/js/rust/.gitkeep
 /public/dist/
 node_modules/
