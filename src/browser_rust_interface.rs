@@ -3,7 +3,8 @@ extern crate wasm_bindgen;
 
 use wasm_bindgen::prelude::*;
 use receiver::handle_receive_key_event;
-use game::game;
+use game::init_game;
+use game::calc_next;
 
 #[wasm_bindgen]
 extern {
@@ -23,6 +24,11 @@ pub fn send_browser_key_event(key_str: &str) {
 }
 
 #[wasm_bindgen]
-pub fn start() {
-    handle_rust_event("Subscribed!");
+pub fn init() {
+    init_game();
+}
+
+#[wasm_bindgen]
+pub fn update() {
+    calc_next();
 }
