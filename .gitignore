@@ -1,8 +1,12 @@
+.idea/
+
 /target
 **/*.rs.bk
 Cargo.lock
 
+node_modules/
+/npm-debug.log
+
 /js/rust/
 !/js/rust/.gitkeep
 /public/dist/
-node_modules/
